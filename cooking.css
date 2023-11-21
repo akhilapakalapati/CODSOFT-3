@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.background-homepage {
+    background-image: url("https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?w=900&t=st=1665743095~exp=1665743695~hmac=749c876a1abfb95a4fa61ee61ae3916a5da750a29853651d881813c49169eabb");
+    height: 150vh;
+    background-size: cover;
+}
+
+.logo-image {
+    height: 45px;
+    width: 50px;
+}
+
+#font-top {
+    font-size: 20px;
+    font-family: "Bree Serif";
+    color: black;
+    text-decoration: overline;
+}
+
+.main-heading-homepage {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Bree Serif";
+}
+
+.paragraph-homepage {
+    color: #ffffff;
+    text-align: center;
+}
+
+.box-homepage {
+    background-color: #00000080;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    height: 250px;
+    width: 400px;
+}
+
+.background-know {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.card-know {
+    background-color: #ededa1;
+    margin: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-size: cover;
+}
+
+.image-know {
+    height: 280px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.heading-known {
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main-heading-top-know {
+    color: red;
+    font-size: 30px;
+    font-family: "Roboto";
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.custom-button-know {
+    margin: 10px;
+}
+
+.large-background {
+    background-color: #00000080;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    height: 350px;
+    width: 400px;
+    text-align: center;
+}
+
+.large-heading-homepage {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.large-image {
+    height: 200px;
+    width: 250px;
+    border-radius: 40px;
+}
+
+.background-travel {
+    background-image: url("https://www.kibrispdr.org/data/587/gambar-wallpaper-ppt-4.jpg");
+    background-size: cover;
+    height: 120vh;
+    width: 100vw;
+}
+
+.heading-travelhomepage {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.paragraph-travelhomepage {
+    text-align: center;
+    font-size: 24px;
+}
+
+.card-travel {
+    margin: 80px;
+    background-image: radial-gradient(#f7daec, #db9cc5);
+    border-radius: 5px;
+}
+
+.custom-button-travelhompage-start {
+    background-color: #c2e4ed;
+    border-width: 2px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 7px;
+    margin: 5px;
+    border-color: #45a1cc;
+    border-style: solid;
+}
+
+.background-followus {
+    background-image: url("https://img.freepik.com/free-photo/flowers-white-background_24972-6.jpg?w=740&t=st=1665985587~exp=1665986187~hmac=29809821249bb34b6540fb1cc2e6c750084904a92d0911bb3b708e6befe704c6");
+    background-size: cover;
+    width: 130vw;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.heading-followus {
+    font-size: 32px;
+    font-family: "Roboto";
+    color: black;
+    text-align: center;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.paragraph-followus {
+    font-size: 24px;
+    color: black;
+    font-family: "Roboto";
+    padding: 7px;
+}
+
+.coustom-icon-followus-i {
+    font-size: 40px;
+    color: red;
+    margin: 10px;
+}
+
+.coustom-icon-followus-f {
+    font-size: 40px;
+    color: blue;
+    margin: 10px;
+}
+
+.background-followus-small {
+    background-image: url("https://png.pngtree.com/background/20210709/original/pngtree-color-plant-flower-frame-picture-image_954854.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.background-veg {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+
+.main-heading-veg {
+    color: #db3312;
+    font-family: "Bree Serif";
+    font-size: 24px;
+    text-align: center;
+}
+
+.heading-veg {
+    color: #1b1e24;
+    font-size: 25px;
+}
+
+.paragraph-veg {
+    color: #5d5f63;
+    font-size: 15px;
+}
+
+.card-veg {
+    background-image: radial-gradient(#edebb4, #edebaf, #e0de90);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-background {
+    background-color: #1f2933;
+    background-size: cover;
+    padding: 10px;
+}
+
+.paragraph-top {
+    color: #cced00;
+    font-size: 20px;
+}
+
+.heading-top {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.background-slides {
+    background-color: #323f4b;
+    text-align: center;
+}
+
+.image-slides {
+    height: 150px;
+    width: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border-radius: 390px;
+}
+
+.para-readmore {
+    font-size: 15px;
+    color: #9aa5b1;
+}
+
+.haeding-readmore {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.card-slides {
+    background-color: #323f4b;
+    padding: 40px;
+}
+
+.heading-modal {
+    color: red;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.bg-login {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ededa1;
+}
+
+.login-main_bg {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.main-heading-notes {
+    text-align: center;
+    padding: 10px;
+    font-family: "Comic Sans MS";
+    background-color: #FDE1F8;
+}
+
+.notes-text {
+    padding: 10px;
+}
+
+.notes-btn {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+}

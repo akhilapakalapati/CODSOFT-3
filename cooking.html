@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./cooking.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6d7114319d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="section1">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <a class="navbar-brand" id="font-top" href="#"><img src="https://img.freepik.com/premium-vector/food-logo-design_139869-254.jpg?w=740" class="logo-image" /> Sudha HoMe Recipes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" href="#" onclick="display('sectionreadrecipes')">Read Recipes<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" onclick="display('sectionknow')">Know More</a>
+                        <a class="nav-link" href="#" onclick="display('sectionfollow')">Follow us</a>
+                        <a class="nav-link" href="#" onclick="display('sectionlogin')">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="background-homepage">
+            <div class=" d-flex flex-row justify-content-center">
+                <div class="box-homepage">
+                    <h1 class="main-heading-homepage">Sudha HoMe Recipes</h1>
+                    <p class="paragraph-homepage">Real cooking is more about following your heart than following recipes.</p>
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="btn btn-warning" onclick="display('sectionknow')">Know More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-10 m-auto">
+                <div class="large-background m-auto">
+                    <img src="https://freedesignfile.com/upload/2021/09/Cooking-Logo-design-template-vector.jpg" class="large-image" />
+                    <h1 class="large-heading-homepage">If you are a chef, no matter how good a chef you are, it's not good cooking
+                        for yourself; the joy is in cooking for others</h1>
+                </div>
+            </div>
+
+
+
+            <div class="col-5 d-flex ml-auto">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                    Software Developer
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Software developed By</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h1 class="heading-modal">Akhila Pakalapati</h1>
+                                <p>Eluru,andhra pradesh</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="sectionknow">
+        <div class="background-know">
+            <div class="container">
+                <div class="row">
+                    <h1 class="main-heading-top-know col-12 col-md-12">Know More</h1>
+                    <div class="card-know shadow-lg col-12 col-md-4">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/18/ba/76/5b/peep-kitchen.jpg" class="image-know col-md-12" />
+                        <h1 class="heading-known">Veg Recipes</h1>
+                        <div>
+                            <button class="btn btn-danger mb-3" onclick="display('sectionveg')">Recipes</button>
+                        </div>
+                    </div>
+
+                    <div class="card-know shadow-lg col-12 col-md-4">
+                        <img src="https://recipeflow.com/wp-content/uploads/2015/07/chicken-tikka-kabab-recipe-india-1024x575.jpg" class="image-know col-md-12" />
+                        <h1 class="heading-known">Non-Veg Recipes</h1>
+                        <div>
+                            <button class="btn btn-danger mb-3" onclick="display('sectionnonveg')">Recipes</button>
+                        </div>
+                    </div>
+
+                    <div class="card-know shadow-lg col-12 col-md-4">
+                        <img src="https://budwigcenter.com/wp-content/uploads/2020/06/The-Amazing-Health-Benefits-Of-Raw-Lemon-Juice.png" class="image-know col-md-12" />
+                        <h1 class="heading-known">Juices</h1>
+                        <div>
+                            <button class="btn btn-danger mb-3" onclick="display('sectionjuices')">Recipes</button>
+                        </div>
+                    </div>
+
+                    <div class="card-know shadow-lg col-12 col-md-4">
+                        <img src="https://www.foodandwine.com/thmb/M1B5sAzsA0QR5nlD5Dv8-Yxjx-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/salmon-nicoise-salad-FT-RECIPE0221-984254ccb3734468836570330b4ff897.jpg" class="image-know col-md-12" />
+                        <h1 class="heading-known">Salads</h1>
+                        <div>
+                            <button class="btn btn-danger mb-3" onclick="display('sectionsalads')">Recipes</button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-end col-12 col-md-12">
+                        <button class="btn btn-warning custom-button-know" onclick="display('section1')">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionfollow">
+        <div class="contanier">
+            <div class="row">
+                <div class="background-followus d-none d-md-block">
+                    <h1 class="heading-followus mt-5">Follow Us</h1>
+                    <p class="paragraph-followus">On Our Social Networks</p>
+                    <div class="d-flex flex-row justify-content-center">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram coustom-icon-followus-i"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook coustom-icon-followus-f"></i></a>
+                        <a href="https://www.youtube.com/c/SudhAhoMerecipes/about" target="_blank"><i class="fa-brands fa-youtube coustom-icon-followus-i"></i></a>
+                        <a href="https://www.linkedin.com/in/akhila-pakalapati?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDUlo8o3%2FSNaP4XEIcsFXNA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin coustom-icon-followus-f"></i></a>
+                    </div>
+                    <div class="col-4 m-auto">
+                        <button class="btn btn-secondary" onclick="display('section1')">back</button>
+                    </div>
+
+                </div>
+
+
+                <div class="background-followus-small d-block d-md-none d-flex flex-column justify-content-center">
+                    <h1 class="heading-followus">Follow Us</h1>
+                    <p class="paragraph-followus">On Our Social Networks</p>
+                    <div class="d-flex flex-row justify-content-center">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram coustom-icon-followus-i"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook coustom-icon-followus-f"></i></a>
+                        <a href="https://www.youtube.com/c/SudhAhoMerecipes/about" target="_blank"><i class="fa-brands fa-youtube coustom-icon-followus-i"></i></a>
+                        <a href="https://www.linkedin.com/in/akhila-pakalapati?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDUlo8o3%2FSNaP4XEIcsFXNA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin coustom-icon-followus-f"></i></a>
+                    </div>
+
+                    <div class="col-4 m-auto">
+                        <button class="btn btn-secondary" onclick="display('section1')">back</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="sectionlogin">
+        <div class="login-main_bg">
+            <div class="bg-login shadow-lg">
+                <h1>Login</h1>
+                <p>User ID</p>
+                <input type="textbox" placeholder="enter your gmail">
+                <p>Password</p>
+                <input type="password" placeholder="atleast 1 special character">
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <button class="login-button btn btn-danger" onclick="display('section1')">Back</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div id="sectionveg">
+        <div class="background-veg">
+            <h1 class="main-heading-veg mt-3">Veg Recipes Video</h1>
+            <hr />
+            <hr />
+
+
+            <div class="card-veg shadow-lg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/trQ56rDcgt8?rel=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12">Malabar spinach Dal</h1>
+                            <p class="col-12 paragraph-veg">Palak takes up its nutritional value by adding
+                                more proteins, vitamins, fibre and minerals like iron, magnesium and potassium.
+                                Spinach is also a well-known source of energy that helps rejuvenate the body.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XCkN0IWJFTM?rel=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">Bottlegourd halwa</h1>
+                            <p class="col-12 paragraph-veg">Bottle gourd is a vegetable high on water and is a
+                                rich source of vitamin C, K and calcium. It helps in maintaining a healthy heart and
+                                brings down bad cholesterol levels. The juice is also beneficial for diabetic patients as
+                                it stabilizes the blood sugar level and maintains blood pressure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x63GaJo8bz8?rel=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Lady fingers curry</h1>
+                            <p class="col-12 paragraph-veg">Ladyfinger has a rich amount of vitamin A, B, and C along with elements like calcium and zinc,
+                                making it may be considered as an ideal vegetable that can be consumed during pregnancy. It also contains fibre and vitamin B9
+                                (folic acid/folate).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_RB_w6_AzRE?rel=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">soya chunk pepper fry recipe</h1>
+                            <p class="col-12 paragraph-veg">Protein, omega-3 fatty acids, fibre, and minimal saturated fat are all found in soya chunks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x63GaJo8bz8?rel=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">healthy curry leaves powder</h1>
+                            <p class="col-12 paragraph-veg">Powerful antioxidant.
+                                May reduce the risk of cancer.
+                                Reduces risk of heart diseases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-end mr-5 mb-2">
+                <button class="btn btn-danger" onclick="display('sectionknow')">Back</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="sectionnonveg">
+        <div class="background-veg">
+            <h1 class="main-heading-veg mt-3">Non-Veg Recipes Video</h1>
+            <hr />
+            <hr />
+
+
+            <div class="card-veg shadow-lg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LQoNpBM1LpA" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12">Special Chicken gravy curry</h1>
+                            <p class="col-12 paragraph-veg">A typical curry from the Indian subcontinent consists of chicken stewed in an onion-
+                                and tomato-based sauce, flavoured with ginger, garlic, tomato puree, chilli peppers and a variety of spices, often
+                                including turmeric, cumin, coriander, cinnamon, and cardamom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/edskDFIp_R0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">Sea bass fish Curry</h1>
+                            <p class="col-12 paragraph-veg">The dish made with Sea Bass Curry Cut is rich in nutrients like
+                                omega – 3 fatty acids, proteins, and several vitamins. This easy to make dish isn’t just healthy but
+                                also packed with flavors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9C3ewEeFjJU" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Mutton dum briyani</h1>
+                            <p class="col-12 paragraph-veg">The meat is flavoured with ginger, garlic, red chili, cumin, garam masala, fried onion
+                                and curd. This biryani is also known as kachay gosht ki biryani or dum biryani, where the meat is marinated and cooked
+                                along with short grain and fine rice. It is left on a slow fire or dum for a fragrant and aromatic flavour.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xwT79kpMVsQ" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">Gongura Chicken</h1>
+                            <p class="col-12 paragraph-veg">Gongura chicken is a popular andhra style dish where chicken is cooked in with roselle
+                                leaves, spices, onions and herbs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YVYMndN1R7s" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Crispy nethallu fry</h1>
+                            <p class="col-12 paragraph-veg">Nethili Fish Fry, also known as Anchovy fry, is a delicious and popular South Indian
+                                dish made with dried anchovies. The small fish is marinated in a spicy mixture of spices, and then shallow fried till
+                                crispy. Perfect to be served as an appetizer or as a side dish. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-end mr-5 mb-2">
+                <button class="btn btn-danger" onclick="display('sectionknow')">Back</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="sectionjuices">
+        <div class="background-veg">
+            <h1 class="main-heading-veg mt-3">Juices</h1>
+            <hr />
+            <hr />
+
+
+            <div class="card-veg shadow-lg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KcKMtHtTJEM" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12">Lemonade and honey water</h1>
+                            <p class="col-12 paragraph-veg">Lemon and honey water is like a healthy elixir, a powerhouse of nutrients. Several studies
+                                claim that this drink helps in burning fat, clears acne and flushes out toxins from the body. Honey is a storehouse of
+                                antioxidants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tkiUMKG92f0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">Carrot and Orange Juice</h1>
+                            <p class="col-12 paragraph-veg">Absolutely!
+
+                                "Discover the invigorating fusion of flavors in our Carrot and Orange Juice! This vibrant blend combines 
+                                the zesty brightness of oranges with the earthy sweetness of carrots, delivering a burst of nutrients and refreshment 
+                                in every sip. Join us as we explore this easy-to-make, power-packed elixir that not only tantalizes your taste buds but 
+                                also boosts your health. Stay tuned for the simplest yet most rewarding recipe that will elevate your juicing game and 
+                                bring a sunny twist to your day!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2aHbMhcd4Eg" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Beetroot Juice</h1>
+                            <p class="col-12 paragraph-veg">Welcome to our juicing adventure! Dive into the rich, vibrant world of health with
+                                 our Beetroot Juice recipe. This simple yet powerful concoction is packed with antioxidants and nutrients, 
+                                 promoting better stamina, improved blood flow, and a healthy dose of vitamins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AQk-YFhuDsQ" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">grape juice</h1>
+                            <p class="col-12 paragraph-veg">Join us as we explore the delicious world of homemade Grape Juice. Bursting with 
+                                the natural sweetness and vibrant flavors of fresh grapes, this delightful concoction is a pure essence of goodness. 
+                                In this video, we'll show you how to transform plump, juicy grapes into a refreshing, nutritious drink that's rich in 
+                                antioxidants and full of health benefits. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vtmbLsm89Rs" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Mango Juice</h1>
+                            <p class="col-12 paragraph-veg">In this video, we'll guide you through the step-by-step process of creating the 
+                                most refreshing and flavorful mango juice you've ever tasted. From selecting the ripest mangoes to blending them into 
+                                a smooth, golden nectar, we'll reveal the secrets to achieving that perfect balance of sweetness and tanginess.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-end mr-5 mb-2">
+                <button class="btn btn-danger" onclick="display('sectionknow')">Back</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="sectionsalads">
+        <div class="background-veg">
+            <h1 class="main-heading-veg mt-3">Salads</h1>
+            <hr />
+            <hr />
+
+
+            <div class="card-veg shadow-lg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mYLfn0bCe3E" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12">Easy breakfast recipe</h1>
+                            <p class="col-12 paragraph-veg">With the right quantity and type of fruits, a fruit salad can work wonders for you,
+                                for it will provide you with a power-packed dose of fibre, vitamins and antioxidants. At the same time, you will also
+                                get a wide range of health benefits, right from lower blood pressure levels to weight management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/948mcYdlhRk" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">Tasty Russian Salad Recipe</h1>
+                            <p class="col-12 paragraph-veg">Russian salad, also known as Olivye salad, is a salad that originated in Russia. It is a popular salad in many countries and can be found in many restaurants and homes around the world.
+                                Russian salad is a nutritious and delicious dish that provides a variety of vitamins and minerals. The vegetables in the salad are a good source of fiber. It is a tasty and healthy option for those looking for a
+                                 filling and nutritious meal. It can be a great side dish or served as a light and refreshing main course.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NNQVM35goK8" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Easy Chicken Salad Recipe</h1>
+                            <p class="col-12 paragraph-veg">Easy Chicken Salad Recipe - Cool and refreshing chicken salad to prepare at home which is easy,
+                                 healthy and tasty with the combination of tender chicken, vegetables, perfect dressing and with a hubs in it. Great food for lunch !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 order-1 order-md-2 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dDhOpHcAJGo" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 order-md-1 order-2">
+                            <h1 class="heading-veg col-12">EASY GREEK SALAD RECIPE</h1>
+                            <p class="col-12 paragraph-veg">Greek salad highlights the beauty of the Mediterranean diet, where a few simple, 
+                                fresh ingredients in their most natural form turn into a dazzling salad. Pair it with my homemade Greek salad 
+                                dressing and you’re good to go! 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-veg col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 col-12 col-md-5 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UlfAiRtmNwA" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="heading-veg col-12 ">Broccoli Salad Recipe</h1>
+                            <p class="col-12 paragraph-veg">A light salad for lunch or a late dinner! Broccoli pairs perfectly with carrots 
+                                and tomatoes! Not many people know this delicious broccoli recipe. Broccoli recipes are always delicious and healthy!
+                                 Vegan salads. This broccoli salad with vegetables is very filling and delicious.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-end mr-5 mb-2">
+                <button class="btn btn-danger" onclick="display('sectionknow')">Back</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="sectionreadrecipes">
+        <div class="main-background">
+
+            <div class="container">
+                <div class="row">
+                    <p class="paragraph-top col-12 text-center">Read More Recipes</p>
+
+
+                    <div class="background-slides col-12">
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-slides col-10 col-md-6 col-lg-3 m-auto">
+                                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/paneer-butter-masala.jpg" class="d-block w-100 image-slides" alt="...">
+                                    </div>
+                                    <p class="para-readmore">Paneer butter masala recipe – Learn to make the best restaurant style paneer butter
+                                        masala at home. Isn’t it fun to recreate restaurant style dishes at home? Years ago,
+                                        I found this best paneer butter masala recipe in one of the cookbooks in a library.
+                                        I tried it, tweaked it, then made this for years & my entire family got hooked to it.
+                                        It’s creamy, flavorful & tastes super delicious!!
+                                        It goes so well with Butter naan, roti, plain basmati rice or Jeera rice. Paneer butter masala, also known as butter paneer is a rich & creamy curry made with paneer, spices, onions, tomatoes, cashews and butter. As the name denotes, the
+                                        curry is cooked in butter which imparts it’s characteristic buttery flavor to the dish.</p>
+
+                                    <h1 class="haeding-readmore">-Panner Butter Masala</h1>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-slides col-10 col-md-6 col-lg-3  m-auto">
+                                        <img src="https://www.shutterstock.com/image-photo/red-velvet-cake-on-wood-600w-1709379307.jpg" class="d-block w-100 image-slides" alt="...">
+                                    </div>
+                                    <p class="para-readmore">Making a homemade sponge cake was never so easy. Begin by mixing sugar and butter
+                                        together. Whisk well until light and fluffy with a manual whisker or a fork. Once done,
+                                        add the beaten eggs and blend well.
+                                        Beat further so that the mixture turns white and creamySift together the all-purpose
+                                        flour and baking soda. It is done to evenly distribute the baking soda in flour.
+                                        Gradually, add this to the egg mixture. If required, add a little milk and mix till the
+                                        batter is fluffy and soft. You may not add the entire milk if you feel the consistency of
+                                        your cake is fine and it pours down like canned condensed milk. Add vanilla essence and
+                                        blend well. Vanilla essence is important to camouflage the smell of
+                                        eggs and to make the cake taste delicious..</p>
+                                    <h1 class="haeding-readmore">-Cake</h1>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-slides col-10 col-md-6 col-lg-3  m-auto">
+                                        <img src="https://allwaysdelicious.com/wp-content/uploads/2020/08/tandoori-chicken-hero.jpg" class="d-block w-100 image-slides" alt="...">
+                                    </div>
+                                    <p class="para-readmore">Tandoori chicken at its best! This easy recipe helps you make
+                                        incredibly tender, juicy, moist and outrageously delicious Tandoori chicken. This mind-blowing way of grilling chicken
+                                        is immensely popular in the Indian restaurants & is known as Tandoori Murgh. It is eaten
+                                        with Cilantro Chutney or Mint Chutney. Indian food lovers keep going back to the restaurants time and again, not knowing it is
+                                        the simplest that can be made at home.Tandoori chicken at its best! This easy recipe
+                                        helps you make incredibly tender, juicy, moist and outrageously delicious Tandoori
+                                        chicken. This mind-blowing way of grilling chicken is immensely popular in the Indian restaurants
+                                        & is known as Tandoori Murgh. It is eaten with Cilantro Chutney or Mint Chutney.
+                                        Indian food lovers keep going back to the restaurants time and again,
+                                        not knowing it is the simplest that can be made at home.</p>
+                                    <h1 class="haeding-readmore">-Chicken Tandooriy</h1>
+                                </div>
+                            </div>
+                            <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mt-5">
+                        <button class="btn btn-danger" onclick="display('section1')">Back</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+
+
+
+</body>
+
+</html>
