@@ -246,6 +246,8 @@
 .background-slides {
     background-color: #323f4b;
     text-align: center;
+    height:100vh;
+    background-size: cover;
 }
 
 .image-slides {
@@ -283,15 +285,20 @@
 
 
 .bg-login {
+    align-self: center;
     text-align: center;
     margin: 30px;
     padding: 20px;
     border-radius: 10px;
+    max-width: 350px;
     background-color: #ededa1;
 }
 
 .login-main_bg {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
